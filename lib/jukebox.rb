@@ -60,7 +60,7 @@ end
 def run(songs)
   #calls all methods to implement program
   puts "Please enter a command:"
-  command = gets.downcase.strip 
+  command = gets.strip 
   case command
     when "help"
 		  help
@@ -68,9 +68,10 @@ def run(songs)
 		list(songs)
 	when "play"
 		play(songs)
-	when "exit"
+  when "exit"
 		exit_jukebox
 	else 
 	  help 
 	end
 end 
+    
