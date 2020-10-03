@@ -40,9 +40,8 @@ def play(songs)
   #output appropriate song name
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  i = 0 
   song_number = (1..songs.length).to_a
-  if (1..9).to_a.include?(user_input.to_i)
+  if song_number.include?(user_input.to_i)
     puts "Playing #{songs[user_input.to_i - 1]}"
   elsif songs.include?(user_input)
     puts "Playing #{user_input}"
